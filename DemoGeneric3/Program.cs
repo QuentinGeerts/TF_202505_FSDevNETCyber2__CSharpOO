@@ -1,9 +1,9 @@
-﻿
-// 1. Action<>
+﻿// 1. Action<>
 // → Aucun retour
 
 using DemoGeneric3.Models;
 
+Console.WriteLine("Démo des délégués génériques\n");
 Action<double, double> operations = null;
 operations += Addition;
 operations += (double a, double b) => { Console.WriteLine($"{a} - {b} = {a - b}"); };
